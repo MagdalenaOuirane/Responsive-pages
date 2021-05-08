@@ -1,0 +1,580 @@
+/*  GOOGLE FONTS */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+}
+
+/* Document for screen */
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.content-body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0 auto;
+  max-width: 80rem;
+  background-color: #f5f5f5;
+}
+
+/* PAGE-HEADER */
+
+.page-header {
+  width: 100%;
+  max-width: 80rem;
+  background-color: #6a7c8c;
+  z-index: 2;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+/* NAVIGATION */
+
+.navbar {
+  width: 90%;
+  margin: 1.3em 0 0.7em 1.8em;
+}
+
+.nav-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.page-brand img {
+  width: 160px;
+  height: auto;
+}
+
+ul.menu-row {
+  display: flex;
+  list-style: none;
+}
+
+.menu_link {
+  font-family: 'Archivo', sans-serif;
+  font-size: 0.8em;
+  line-height: 0.8em;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 0.3em 1em;
+  position: relative;
+}
+
+.menu-row li a {
+  text-decoration: none;
+}
+
+nav ul {
+  margin-bottom: 0;
+}
+
+/* MEDIA QUERIES FOR MOBILE */
+
+/* HEADER */
+
+@media (max-width: 600px) {
+  .page-header {
+    position: relative;
+  }
+
+  .navbar {
+    width: 100%;
+    max-width: 100%;
+    margin: 0.5em 0;
+  }
+
+  .page-brand img {
+    width: 90px;
+  }
+
+  a.menu_link {
+    font-size: 0.6em;
+    line-height: 2.6em;
+    padding: 0.1em 0.5em;
+  }
+}
+
+/* TABLET */
+
+@media (min-width: 601px) and (max-width: 991px) {
+  .nav-flex {
+    max-width: 100%;
+  }
+}
+
+/*****************************************/
+
+/* MAIN SECTION */
+
+.content-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo-cafe {
+  margin-top: 5em;
+}
+
+img.about_logo,
+img.about_cafe {
+  max-width: 100%;
+  height: auto;
+}
+
+.main_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.notre-title {
+  width: 60%;
+  position: absolute;
+  top: 2em;
+  font-size: 2.2em;
+  font-weight: 700;
+  color: #ffffff;
+  text-align: center;
+}
+
+/* MEDIA QUERIES FOR MOBILE */
+
+/* HOME SECTION */
+
+@media (max-width: 600px) {
+  .logo-cafe {
+    margin-top: 0;
+  }
+
+  .notre-title {
+    font-size: 1.5em;
+  }
+
+  .main_container {
+    margin: 0.5rem 0.5rem;
+  }
+}
+
+/* TABLET */
+
+@media (min-width: 601px) and (max-width: 991px) {
+  .main_container {
+    margin: 0.5rem 0.5rem;
+  }
+}
+
+/******************************************* */
+
+/* ABOUT SECTION */
+
+.about_coffee-section {
+  margin: 4em 0 2em 0;
+  padding: 0 2em;
+}
+
+.choice-title {
+  font-size: 2.2em;
+  font-weight: 700;
+  color: #5c5b5b;
+  line-height: 1em;
+  width: 45%;
+  text-align: center;
+  margin: auto;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin-top: 3em;
+}
+
+.aside {
+  width: 30%;
+  text-align: center;
+  background-color: rgba(106, 123, 139, 0.42);
+}
+
+.img-icon {
+  max-width: 100%;
+  height: auto;
+  margin-top: 1.2em;
+}
+
+.content-title {
+  font-size: 1.5em;
+  font-weight: 700;
+  line-height: 2.2em;
+  color: #ffffff;
+}
+
+.about-item {
+  font-size: 1em;
+  font-weight: 700;
+  line-height: 1.1em;
+  color: #ffffff;
+}
+
+.btn-box {
+  display: flex;
+  justify-content: center;
+}
+
+button.btn {
+  width: 250px;
+  height: 60px;
+  background-color: #6a7b8b;
+  border-radius: 5px;
+  margin-top: 3em;
+  font-size: 1.5em;
+  font-weight: 700;
+  line-height: 1.8em;
+  color: #ffffff;
+}
+
+/* MEDIA QUERIES FOR MOBILE */
+
+/* ABOUT SECTION */
+
+@media (max-width: 600px) {
+  .about_coffee-section {
+    padding: 0;
+  }
+
+  .choice-title {
+    font-size: 1.5em;
+  }
+
+  .content-title {
+    line-height: 1em;
+  }
+
+  .about-item {
+    margin-top: 0.5em;
+  }
+}
+
+/* PROGRAM SECTION */
+
+.program-title {
+  font-size: 2.3em;
+  font-weight: 700;
+  color: rgba(92, 91, 91, 1);
+  text-align: center;
+}
+
+.open_icon {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 80%;
+  margin-top: 3em;
+  margin-left: 4em;
+  text-align: center;
+}
+
+.votre-cafe {
+  font-size: 1.6em;
+  font-weight: 700;
+  color: rgba(92, 91, 91, 1);
+  margin-top: 0.9em;
+  margin-left: 2em;
+}
+
+.flex-row-section {
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 3em auto 5em auto;
+}
+
+.aside-section {
+  width: 40%;
+  height: 30%;
+  text-align: center;
+  margin-bottom: 2em;
+}
+
+.paragraph-item {
+  font-size: 1.5em;
+  line-height: 1.4em;
+}
+
+span {
+  color: rgba(92, 91, 91, 1);
+  font-weight: 700;
+}
+
+.event-title {
+  font-size: 1.5em;
+  text-align: center;
+  color: rgba(92, 91, 91, 1);
+  margin-bottom: 3em;
+}
+
+.contact-info {
+  font-size: 1.5em;
+  color: rgba(92, 91, 91, 1);
+  text-align: center;
+  margin-bottom: 3em;
+}
+
+/* MEDIA QUERIES FOR MOBILE */
+
+/* PROGRAM SECTION */
+
+@media (max-width: 600px) {
+  .open_icon {
+    margin: 3em auto;
+  }
+
+  .program-title {
+    font-size: 1.5em;
+  }
+
+  .aside-section {
+    width: 45%;
+  }
+
+  .paragraph-item {
+    font-size: 1.3em;
+  }
+}
+
+/* PAGE FOOTER */
+
+.page-footer {
+  background-color: #6a7c8c;
+}
+
+.footer-article {
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+  margin: 1.3em 0 0.7em 2em;
+}
+
+.footer-right h6 {
+  font-size: 1em;
+  color: white;
+  line-height: 2em;
+  letter-spacing: 0.32px;
+}
+
+.social-links {
+  margin-top: 1em;
+  text-align: center;
+}
+
+.social-links a {
+  cursor: pointer;
+  margin: 0.8em;
+}
+
+/* MEDIA QUERIES FOR FOOTER-NAV */
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+  .footer-article {
+    width: 100%;
+    margin: 0;
+    height: 15rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  ul.social-links {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .social-links_items {
+    width: 75%;
+  }
+
+  .social-links_items a {
+    margin: 0.2em;
+  }
+}
+
+/* TABLET */
+
+@media (min-width: 601px) and (max-width: 991px) {
+  .footer-article {
+    width: 80%;
+    margin: 1.3em auto 0.7em auto;
+  }
+}
+
+/* ABOUT PAGE */
+
+/* ABOUT-COFFE-CONTENT-SECTION */
+
+.logo-coffee {
+  text-align: center;
+  margin-top: 1em;
+}
+
+.article_box {
+  display: flex;
+  flex-direction: row;
+}
+
+.container {
+  width: 60%;
+  margin: 2rem 2rem;
+}
+
+.main-title {
+  font-size: 2.2em;
+  line-height: 1.3em;
+  color: rgba(92, 91, 91, 1);
+}
+
+.container-paragraph {
+  font-size: 1.2em;
+  line-height: 1.6em;
+  color: rgba(92, 91, 91, 1);
+  width: 90%;
+  margin-top: 1em;
+}
+
+.img-box {
+  width: 40%;
+}
+
+.coffee_img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* ENVIRONMENT-CONTENT-SECTION */
+
+.environment-container {
+  width: 70%;
+  margin-left: 3em;
+}
+
+/* MEDIA QUERIES FOR ABOUT PAGE */
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+  .article_box {
+    flex-direction: column;
+  }
+
+  .container,
+  .environment-container {
+    width: 90%;
+    margin: 0.5rem auto 1rem auto;
+  }
+
+  .main-title {
+    font-size: 1.8em;
+    line-height: 1.2em;
+  }
+
+  .img-box {
+    width: 90%;
+    margin: 0.5rem auto 1rem auto;
+  }
+}
+
+/* TABLET */
+
+@media (min-width: 601px) and (max-width: 991px) {
+  .container {
+    margin: 0.5rem 0.5rem;
+  }
+
+  .environment-container {
+    margin-left: 1em;
+  }
+
+  .img-box {
+    width: 50%;
+    margin: auto;
+  }
+}
+
+/* CONTACT PAGE*/
+
+.contact-page {
+  margin: 4em 0 2em 0;
+  padding: 0 2em;
+}
+
+.contact-title {
+  font-size: 2.4em;
+  text-align: center;
+  color: rgba(92, 91, 91, 1);
+}
+
+/* CONTACT SECTION */
+
+.contact-section {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 3em;
+}
+
+.contact_address {
+  font-size: 1.5em;
+  font-style: normal;
+  color: rgba(92, 91, 91, 1);
+  padding-bottom: 3em;
+}
+
+a {
+  color: rgba(92, 91, 91, 1);
+  text-decoration: none;
+}
+
+.map_img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* MEDIA QUERIES FOR CONTACT PAGE */
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+  .contact-title {
+    font-size: 1.8em;
+  }
+
+  .contact_address {
+    text-align: center;
+  }
+  .map_item {
+    margin: 0.5rem 0.5rem;
+  }
+}
