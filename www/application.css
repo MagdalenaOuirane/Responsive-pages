@@ -120,6 +120,14 @@ nav ul {
   }
 }
 
+/* LAPTOP AND LARGE DEVICES */
+
+@media (min-width: 992px) {
+  .content-body {
+    max-width: 80rem;
+  }
+}
+
 /*****************************************/
 
 /* MAIN SECTION */
