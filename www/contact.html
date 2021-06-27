@@ -8,6 +8,9 @@
     <title>Contact</title>
     <link rel="stylesheet" href="application.css" />
 
+    <script defer src='form.js'></script>
+    <script defer src="object.js"></script>
+
 </head>
 
 <body>
@@ -27,10 +30,12 @@
                         <a href="index.html" class="menu_link" title="Accueil">Accueil</a>
                     </li>
                     <li>
-                        <a href="about.html" class="menu_link" title="Qui sommes-nous?">Qui sommes-nous?</a>
+                        <a href="about.html" class="menu_link" title="Qui
+                                sommes-nous?">Qui sommes-nous?</a>
                     </li>
                     <li>
-                        <a href="contact.html" class="menu_link" title="Nous contacter">Nous contacter</a>
+                        <a href="contact.html" class="menu_link" title="Nous
+                                contacter">Nous contacter</a>
                     </li>
                 </ul>
             </nav>
@@ -45,15 +50,92 @@
                 <img src="./assets/logo_mrcoffee.png" alt="logo-mrcoffee" width="200" />
             </div>
 
-            <h1 class="contact-title">On vous attend !</h1>
+            <!-- FORM -->
+            <form action="" method="" novalidate>
 
+                <h2 class="contact-form">Dites nous tout!</h2>
+                <ul>
+                    <li>
+                        <label for="surname">Nom *</label>
+                        <input type="text" name="surname" id="surname" required>
+
+                    </li>
+                    <li>
+                        <label for="name">Prénom *</label>
+                        <input type="text" id="name" name="user_name" required />
+
+                    </li>
+
+                    <li>
+                        <label for="phone">Téléphone </label>
+                        <input type="tel" name="phone" id="phone" placeholder="123456789" />
+
+
+
+                    </li>
+                    <li>
+                        <label for="mail">Adresse mail *</label>
+                        <input type="email" id="mail" name="user_email" required />
+
+                    </li>
+
+                    <li class="user-msg">
+                        <label for="msg">Message *</label>
+                        <textarea id="msg" name="user_message" placeholder="Tapez votre message ici"
+                            required></textarea>
+                    </li>
+                    <li class="button">
+                        <button type="submit" class="btnModal">Envoyer!</button>
+                    </li>
+
+                    <li class="form-message"></li>
+
+                </ul>
+            </form>
+
+            <!-- The Modal -->
+
+            <div id="myModal" class="modal">
+
+                <div class="modal-content">
+
+                    <span class="removeBtn">+</span>
+                    <article class="modal-article">
+                        <div class="modal-logo">
+                            <img src="./assets/logo_dark.png" alt="logo" width="60px" height="80px" />
+
+                        </div>
+
+                        <div class="modal-msg">
+
+                            <h4 class="merci-msg">MERCI</h4>
+                            <h4 class="votre-msg">Votre message a bien été
+                                envoyé !</h4>
+
+                        </div>
+                    </article>
+                    <article class="article-answer">
+                        <p class="coffee-msg">Nous essaierons d’y répondre
+                            au mieux dans les plus brefs délais.
+                            À
+                            bientot chez
+                            Mr.Coffee</p>
+                        <div class=fermerBtn-box>
+                            <button class="fermerBtn">Fermer</button>
+                        </div>
+                    </article>
+                </div>
+            </div>
         </section>
 
 
         <!-- CONTACT SECTION -->
 
         <section id="contact" class="contact-section">
+
             <article class="address_items">
+
+                <h1 class="contact-title">On vous attend !</h1>
                 <address class="contact_address">
                     <span>Mr.Coffee</span><br />
                     15 place Jules Guesde<br />
@@ -89,6 +171,7 @@
                     </div>
             </article>
         </footer>
+    </div>
     </div>
 </body>
 
