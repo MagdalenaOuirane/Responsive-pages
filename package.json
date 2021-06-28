@@ -1,0 +1,31 @@
+{
+  "name": "responsive-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint www/*",
+    "lint:fix": "eslint www/*.js --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MagdalenaOuirane/Responsive-pages.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MagdalenaOuirane/Responsive-pages/issues"
+  },
+  "homepage": "https://github.com/MagdalenaOuirane/Responsive-pages#readme",
+  "devDependencies": {
+    "eslint": "^7.29.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.23.4",
+    "prettier": "^2.3.2"
+  },
+  "dependencies": {
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^3.4.0"
+  }
+}
